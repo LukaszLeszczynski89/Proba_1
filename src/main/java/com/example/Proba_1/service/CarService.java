@@ -13,19 +13,23 @@ import static java.util.Arrays.stream;
 @Service
 public class CarService {
 
-    CarRepository carRepository;
+    CarRepository repository;
     private Arrays carList;
 
     @Autowired
-    public CarService (CarRepository carRepository){
-        this.carRepository = carRepository;
+    public CarService(CarRepository carRepository) {
+        this.repository = carRepository;
     }
 
-    public List<Car> getAll(){
-        return carRepository.getAll();
+    public List<Car> getAll() {
+        return repository.getAll();
     }
 
-    public Car getById(long id){
-        return carRepository.getById(id);
+    public Car getById(long id) {
+        return repository.getById(id);
+    }
+
+    public void addCar(Car car) {
+        repository.addCar(car);
     }
 }

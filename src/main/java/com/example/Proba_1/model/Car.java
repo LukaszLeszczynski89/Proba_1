@@ -8,15 +8,15 @@ import java.io.Serializable;
 public class Car implements Serializable {
 
     private long id;
-    private String Make;
-    private String Model;
-    private String PlateNr;
+    private String make;
+    private String model;
+    private String plateNr;
 
-    public Car(long id, String Make, String Model, String PlateNr) {
+    public Car(long id, String make, String model, String plateNr) {
         this.id = id;
-        this.Make = Make;
-        this.Model = Model;
-        this.PlateNr = PlateNr;
+        this.make = make;
+        this.model = model;
+        this.plateNr = plateNr;
 
     }
 
@@ -33,27 +33,27 @@ public class Car implements Serializable {
     }
 
     public String getMake() {
-        return Make;
+        return make;
     }
 
     public void setMake(String make) {
-        Make = make;
+        this.make = make;
     }
 
     public String getModel() {
-        return Model;
+        return model;
     }
 
     public void setModel(String model) {
-        Model = model;
+        this.model = model;
     }
 
     public String getPlateNr() {
-        return PlateNr;
+        return plateNr;
     }
 
     public void setPlateNr(String plateNr) {
-        PlateNr = plateNr;
+        this.plateNr = plateNr;
     }
 
 

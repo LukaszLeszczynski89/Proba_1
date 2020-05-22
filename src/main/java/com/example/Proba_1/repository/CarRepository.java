@@ -33,5 +33,9 @@ public class CarRepository {
                 .orElse(null);
     }
 
+    public void addCar(Car car){
+        carList.add(car);
+    }
+
 
 }
